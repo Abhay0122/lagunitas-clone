@@ -1,0 +1,642 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.bg{
+    min-height: 100vh;
+    background-color: #f7f2ea;
+    /* padding: 2vh 0vw; */
+    width: 100vw;
+
+}
+
+/* nav_top */
+
+#nav_top{
+    min-height: 15vh;
+    width: calc(100vw - 4vw);
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    padding: 0 7vh;
+    position: fixed;
+    z-index: 11;
+    left: 5vw;
+}
+
+#nav_top>img{
+    height: 35px;
+}
+
+#nav_top>button{
+    padding: 1.5vh 2.5vw;
+    color: white;
+    background-color: #519622;
+    font: 700 1.5vmax "druk heavy";
+    border-radius: 2px;
+    border: none;
+    text-transform: uppercase;
+}
+
+#nav_left{
+    min-height: 100vh;
+    width: 4vw;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 2vh;
+    z-index: 11;
+    border-right: 2px groove #519622;
+}
+
+#nav_left i{
+    margin: 1vmax 0;
+}
+
+/* main */
+
+#main{
+    position: absolute;
+    min-height: 100vh;
+    /* background-color: red; */
+    width: calc(100vw - 70px);
+    top: 0;
+    left: 4vw;
+    right: 0;
+    scroll-behavior: smooth;
+    overflow-y: hidden !important;
+    overflow-x: hidden;
+}
+#main::-webkit-scrollbar{
+    display: none;
+}
+
+#main_img{
+    height: 45vw;
+    position: absolute;
+    z-index: 999;
+    top: 50vh;
+    left: 51vw;
+    transform: translate(-48%, -50%);
+    /* background-color: rebeccapurple; */
+}
+
+/* pages_start */
+
+.page{
+    min-height: 100vh;
+    width: 100vw;
+}
+
+/* PAGE_1 */
+
+.page_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* background-color: pink; */
+}
+
+
+.page_1>h1{
+    font: 900 14vmax "druk heavy";
+    width: 70%;
+    letter-spacing: 7px;
+    /* background-color: red; */
+    text-align: center;
+    line-height: 26vh;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+	background-clip: text;
+	background-image: url('texture.png');
+    background-size: cover;
+	color: transparent;
+    background-color:#519622;
+}
+
+.page_1>img{
+    height: 100px;
+    position: absolute;
+    z-index: 989;
+    top: 15%;
+    left: 35%;
+    rotate: -35deg;
+}
+
+/* page_2 */
+
+.page_2{
+    display: flex;
+    padding: 8vmax;
+    justify-content: space-between;
+    position: relative;
+}
+/* page_left_side */
+
+#page_2_left{
+    width: 30%;
+    /* background-color: red; */
+}
+
+#page_2_left>h4{
+    font: 500 1.4vmax "Indie Flower";
+    font-style: italic;
+    margin-bottom: 1vmax;
+}
+
+#page_2_left>h1{
+    width: 85%;
+    font: 200 8vmax "druk heavy";
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+	background-clip: text;
+	background-image: url('texture.png');
+    background-position: center;
+    background-size: cover;
+	color: transparent;
+    background-color: black;
+    line-height: 14vh;
+    margin-bottom: 1.5vmax;
+}
+
+#page_2_left>p{
+    font: 100 1vmax "gilroy";
+    margin: 1.5vmax 0;
+
+}
+
+#page_2_left>button{
+    font: 100 1vmax "druk heavy";
+    padding: 2vh 2.3vw;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+    background-color: black;
+    color: white;
+    
+}
+
+/* page_right_side */
+
+#page_2_right{
+    width: 30%;
+    /* background-color: red; */
+    padding: 6vh 4vw;
+    outline: 4px groove black;
+}
+
+#page_2_right h1{
+    font: 100 1.3vmax "druk heavy";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#page_2_right h5{
+    font: 100 0.8vmax "gilroy";
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+    border-bottom: 2px solid black ;
+}
+
+.measurements{
+    display: flex;
+    align-items: center;
+    margin: 3vh 0;
+}
+
+.measurements span{
+    font: 400 3.8vmax "druk heavy";
+    margin-right: 2vw;
+}
+.measurements p{
+    font: 100 0.8vmax "gilroy";
+}
+
+#units span{
+    margin-right: 4vw;
+}
+
+/* page_3  */
+
+.page_3{
+    /* background-color: rgb(142, 111, 102); */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1vh 6vw;
+}
+
+#page_3_bottom_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.page_3_top>h1{
+    font: 900 22vmax "druk heavy";
+    line-height: 36vh;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+	background-clip: text;
+	background-image: url('texture.png');
+    background-size: cover;
+	color: transparent;
+    background-color:#519622;
+    /* text-align: center; */
+}
+
+#page3_bottom_left{
+    width: 50vw;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#page3_bottom_left img{
+    height: 35vh;
+    width: 30vw;
+    margin-bottom: 0.5vmax;
+}
+#page3_bottom_left>span{
+    font: 900 1.4vmax "Indie Flower";
+    font-style: italic;
+    width: 40%;
+    line-height: 3vh;
+    /* background-color: red; */
+}
+
+#page3_bottom_right{
+    width: 30vw;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#page3_bottom_right P{
+    width: 83%;
+}
+
+#bottom_right_bold{
+    font: 700 1vmax "gilroy";
+    margin-bottom: 6vh;
+}
+
+#page3_bottom_right h5{
+    font: 900 1.5vmax "druk heavy";
+    margin-bottom: 2vh;
+}
+
+#bottom_right_p2{
+    font: 200 1vmax "gilroy";
+    margin-bottom: 1vh;
+}
+#bottom_right_p3{
+    font: 200 1vmax "gilroy";
+}
+
+/* page_4 */
+
+.page_4{
+    padding: 0 8vw;
+    /* background-color: pink; */
+    position: relative;
+}
+
+#drop_content_1{
+    background-image: url(Purple-IPNA.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    width: 30vmax;
+    height: 25vmax;
+    /* border: 1px solid black; */
+    position: relative;
+    top: 0%;
+    left: -5%;
+}
+
+#lotus{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 40px;
+}
+
+#drop_content_1 h1{
+    position: absolute;
+    top: 23%;
+    left: 48%;
+    font: 300 2.1vmax "druk heavy";
+    letter-spacing: 1px;
+    color: white;
+    border-bottom: 2px solid white;
+}
+#drop_content_1 p{
+    position: absolute;
+    top: 38%;
+    width: 40%;
+    left: 36%;
+    text-align: center;
+    font: 300 1vmax "gilroy";
+    /* letter-spacing: 1px; */
+    color: white;
+}
+
+
+#drop_content_2{
+    background-image: url(Purple-IPNA.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    width: 30vmax;
+    height: 25vmax;
+    /* border: 1px solid black; */
+    position: relative;
+    position: absolute;
+    bottom: 30%;
+    left: 17%;
+}
+
+#rangoli{
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    width: 40px;
+}
+
+#drop_content_2 h1{
+    position: absolute;
+    top: 23%;
+    left: 48%;
+    font: 300 2.1vmax "druk heavy";
+    letter-spacing: 1px;
+    color: white;
+    border-bottom: 2px solid white;
+}
+#drop_content_2 p{
+    position: absolute;
+    top: 38%;
+    width: 40%;
+    left: 36%;
+    text-align: center;
+    font: 300 1vmax "gilroy";
+    /* letter-spacing: 1px; */
+    color: white;
+}
+
+#drop_content_3{
+    background-image: url(splat-black.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    width: 35vmax;
+    height: 35vmax;
+    /* border: 1px solid black; */
+    position: relative;
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+
+}
+
+#steam{
+    position: absolute;
+    top: 14%;
+    left: 53%;
+    width: 40px;
+}
+
+#drop_content_3 h1{
+    position: absolute;
+    top: 23%;
+    left: 48%;
+    font: 300 2.2vmax "druk heavy";
+    letter-spacing: 1px;
+    color: white;
+    border-bottom: 2px solid white;
+}
+#drop_content_3 p{
+    position: absolute;
+    top: 36%;
+    width: 40%;
+    left: 36%;
+    text-align: center;
+    font: 300 1.2vmax "gilroy";
+    /* letter-spacing: 1px; */
+    color: white;
+}
+
+#vine_img>img{
+    height: 30vw;
+    rotate: -20deg; 
+    /* margin-left: vmax; */
+}
+
+
+/* page_5 */
+
+.page_5{
+    position: relative;
+    /* background-color: red; */
+}
+
+.page_5 h1{
+    font: 900 8vmax "druk heavy";
+    text-align: center;
+    letter-spacing: 1px;
+    -webkit-background-clip: text;
+	background-clip: text;
+	background-image: url('texture.png');
+    background-size: cover;
+    background-position: center;
+	color: transparent;
+    background-color: black;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+#bottles_imgs_wrapper{
+    height: 60vh;
+    width: 78vw;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+#bottles_imgs_wrapper img{
+    height: 20vw;
+    rotate: -15deg;
+    margin-left: 1.5vw;
+}
+
+#bottles_imgs_wrapper p{
+    width: 8vw;
+    /* background-color: red; */
+    text-align: center;
+    font-size: 1.8vmax;
+    font-family: druk heavy;
+}
+
+.bottle_container{
+    height: 95%;
+    position: relative;
+    width: 13%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px 10px;
+}
+
+#bottle_img_3_box>p{
+    position: absolute;
+    bottom: 5.2%;
+}
+
+
+/* page_6 */
+
+.page_6{
+    /* background-color: pink; */
+    position: relative;
+}
+
+.page_6_bottles{
+    height: 46vw;
+}
+
+.clutter{
+    min-height: 20vh;
+    width: 30vw;
+    /* border: 1px solid black; */
+    position: relative;
+}
+
+.clutter img{
+    height: 16vw;
+}
+
+.page_6_img_1_info h4{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    border-bottom: 2px solid white;
+    font: 400 1.6vmax "druk heavy";
+    text-transform: uppercase;
+    color: white;
+}
+
+.page_6_img_2_info h4{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    border-bottom: 2px solid white;
+    font: 400 1.6vmax "druk heavy";
+    text-transform: uppercase;
+    color: white;
+}
+
+.page_6_img_3_info h4{
+    position: absolute;
+    top: 21%;
+    left: 22%;
+    border-bottom: 2px solid white;
+    font: 400 1.6vmax "druk heavy";
+    text-transform: uppercase;
+    color: white;
+}
+
+.page_6_img_1_info p{
+    position: absolute;
+    top: 40%;
+    left: 16%;
+    text-align: center;
+    font: 100 0.8vmax "gilroy";
+    color: white;
+    width: 10vw;
+}
+
+.page_6_img_2_info p{
+    position: absolute;
+    top: 40%;
+    left: 18%;
+    text-align: center;
+    font: 100 0.8vmax "gilroy";
+    color: white;
+    width: 10vw;
+}
+
+.page_6_img_3_info p{
+    position: absolute;
+    top: 40%;
+    left: 16%;
+    text-align: center;
+    font: 100 0.8vmax "gilroy";
+    color: white;
+    width: 10vw;
+}
+
+.page_6_img_1_info{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.page_6_img_2_info{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+
+.page_6_img_3_info{
+    position: absolute;
+    top: 25%;
+    right: 0%;
+}
+
+.daytime{
+    position: absolute;
+    top: 9%;
+    left: 12%;
+}
+
+.hazywonder{
+    position: absolute;
+    top: -38%;
+    left: 41%;
+    height: 55vw;
+    rotate: -15deg;
+}
+
+.dth{
+    position: absolute;
+    top: 30%;
+    right: 11%;
+    height: 35vw;
+    rotate: -38deg;
+}
